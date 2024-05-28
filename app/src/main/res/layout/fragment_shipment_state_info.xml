@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".shipment.ShipmentStateInfoFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/header"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="7dp"
+        android:text="Do you have Liquid products in your Shipment? and also add image of your shipment if possible."
+        android:textAppearance="@style/QuestionHeader"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/yes_layout"
+            android:background="@drawable/liquid_products_neutral_background">
+
+            <TextView
+                style="@style/MaterialInputTextEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Yes"
+                android:textColor="@color/text_gray"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/no_layout"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/selected_general_border_layout">
+
+            <TextView
+                style="@style/MaterialInputTextEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="No"
+                android:textColor="@color/text_gray"
+                android:textSize="18sp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="7dp"
+            android:text="Shipment Image(optional)"
+            android:textAppearance="@style/QuestionHeader"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/select_image_button"
+            android:textColor="@color/sky_blue"
+            android:text="Select Image"/>
+        <RelativeLayout
+            android:id="@+id/image_layout"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:background="@drawable/general_border_layout"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginBottom="7dp"
+            app:layout_anchor="@id/bottom_sheet_layout"
+            app:layout_anchorGravity="top">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/image_view"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

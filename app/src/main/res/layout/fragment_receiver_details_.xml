@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".shipment.ReceiverDetailsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="7dp"
+            android:text="What's the name and contact number of receiver."
+            android:textAppearance="@style/QuestionHeader" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/receiver_name_layout"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="20dp"
+            app:errorTextAppearance="@style/ErrorText"
+            app:errorIconDrawable="@null"
+            android:hint="Name"
+            app:boxStrokeColor="@color/blue"
+            app:boxStrokeWidth=".3dp"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="false"
+            app:hintTextAppearance="@style/MaterialHintText"
+            app:hintTextColor="@color/green">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/receiver_name"
+                style="@style/MaterialInputTextEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
+                android:hint="Full name"
+                android:inputType="textNoSuggestions|textPersonName"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="7dp"
+            android:id="@+id/receiver_number_layout"
+            app:boxStrokeColor="@color/blue"
+            app:boxStrokeWidth=".3dp"
+            app:errorIconDrawable="@null"
+            app:errorTextAppearance="@style/ErrorText"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="false"
+            app:hintTextAppearance="@style/MaterialHintText"
+            app:hintTextColor="@color/green">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/receiver_number"
+                style="@style/MaterialInputTextEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
+                android:hint="Contact Number"
+                android:inputType="numberDecimal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".shipment.AddPostActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:elevation="3dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:padding="15dp"
+                android:src="@drawable/ic_back_arrow"
+                android:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:text="Create ShipMent"
+                android:textAppearance="@style/PrimaryHeading"
+                android:textColor="@color/black_icon" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text="Next"
+            android:textSize="20sp"
+            android:fontFamily="@font/dm_sans_regular"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/sky_blue"
+            android:id="@+id/next_button"/>
+    </RelativeLayout>
+
+
+    <com.moos.library.HorizontalProgressView
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        app:end_color="@color/sky_blue_medium"
+        app:start_color="@color/sky_blue_medium"
+        app:progressTextVisibility="false"
+        app:track_width="9dp"
+        app:isTracked="true"
+        app:start_progress="0"
+        app:end_progress="100"
+        app:progressDuration="2000"
+        app:animateType="AccelerateDecelerateInterpolator"
+        app:corner_radius="0dp"
+        app:trackColor="#f4f4f4"/>
+
+    <com.serviceapps.transport.utils.CustomViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

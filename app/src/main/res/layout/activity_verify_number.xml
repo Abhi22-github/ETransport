@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".verification.VerifyNumber">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/next_button_layout"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_number_illustration" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-10dp"
+            android:fontFamily="@font/manrope_semibold"
+            android:text="Account Verification"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/dm_sans_regular"
+            android:text="Enter your mobile number to verify your account"
+            android:textColor="@color/text_gray"
+            android:textSize="18sp" />
+        
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            app:boxStrokeColor="@color/sky_blue"
+            app:boxStrokeWidth=".3dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="false"
+            app:prefixText="+91 "
+            app:prefixTextColor="@color/text_gray"
+            app:prefixTextAppearance="@style/PrefixText"
+            app:hintTextAppearance="@style/MaterialHintText"
+            app:hintTextColor="@color/green">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone_number_field"
+                style="@style/MaterialInputTextEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
+                android:inputType="textNoSuggestions|numberDecimal"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+              android:hint="Enter Mobile Number"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:id="@+id/next_button_layout"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="wrap_content">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/sky_blue"
+        android:fontFamily="@font/dm_sans_medium"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:stateListAnimator="@null"
+        android:text="Send OTP"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:elevation="3dp"
+            android:theme="@style/ProgressBarStyle"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

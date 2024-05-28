@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".shipment.ShipmentPriceFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/header"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="7dp"
+        android:text="What Price range do you have in mind"
+        android:textAppearance="@style/QuestionHeader"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+      <androidx.core.widget.NestedScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+              <View
+                  android:layout_width="match_parent"
+                  android:layout_height=".3dp"
+                  android:background="@color/gray_line"
+                  android:layout_marginStart="10dp"
+                  android:layout_marginEnd="10dp"/>
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:id="@+id/first_price"
+                  android:background="?attr/selectableItemBackground"
+                  android:layout_height="wrap_content">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="₹ 200 - 1000"
+                      android:textColor="@color/text_gray"
+                      android:fontFamily="@font/dm_sans_regular"
+                      android:padding="15dp"
+                      android:textSize="18sp"/>
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/ic_round_navigate_next_24"
+                      android:layout_alignParentEnd="true"
+                      android:layout_centerVertical="true"
+                      android:layout_marginEnd="15dp"
+                      app:tint="@color/sky_blue" />
+
+              </RelativeLayout>
+
+
+              <View
+                  android:layout_width="match_parent"
+                  android:layout_height=".3dp"
+                  android:background="@color/gray_line"
+                  android:layout_marginStart="10dp"
+                  android:layout_marginEnd="10dp"/>
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:id="@+id/second_price"
+                  android:background="?attr/selectableItemBackground"
+                  android:layout_height="wrap_content">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="₹ 1000 - 7000"
+                      android:textColor="@color/text_gray"
+                      android:fontFamily="@font/dm_sans_regular"
+                      android:padding="15dp"
+                      android:textSize="18sp"/>
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/ic_round_navigate_next_24"
+                      android:layout_alignParentEnd="true"
+                      android:layout_centerVertical="true"
+                      android:layout_marginEnd="15dp"
+                      app:tint="@color/sky_blue" />
+
+              </RelativeLayout>
+
+
+
+
+              <View
+                  android:layout_width="match_parent"
+                  android:layout_height=".3dp"
+                  android:background="@color/gray_line"
+                  android:layout_marginStart="10dp"
+                  android:layout_marginEnd="10dp"/>
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:id="@+id/third_price"
+                  android:background="?attr/selectableItemBackground"
+                  android:layout_height="wrap_content">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="₹ 7000+"
+                      android:textColor="@color/text_gray"
+                      android:fontFamily="@font/dm_sans_regular"
+                      android:padding="15dp"
+                      android:textSize="18sp"/>
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/ic_round_navigate_next_24"
+                      android:layout_alignParentEnd="true"
+                      android:layout_centerVertical="true"
+                      android:layout_marginEnd="15dp"
+                      app:tint="@color/sky_blue" />
+
+              </RelativeLayout>
+
+              <View
+                  android:layout_width="match_parent"
+                  android:layout_height=".3dp"
+                  android:background="@color/gray_line"
+                  android:layout_marginStart="10dp"
+                  android:layout_marginEnd="10dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </LinearLayout>
+      </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>

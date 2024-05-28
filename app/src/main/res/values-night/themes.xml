@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Transport" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/sky_blue</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/transparent</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Widget.BottomNavigationViewText" parent="@style/Widget.Design.BottomNavigationView">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="ProgressBarStyle" parent="Widget.AppCompat.ProgressBar">
+        <item name="colorAccent">#ffffff</item>
+    </style>
+
+    <style name="LoadingProgressBarStyle" parent="Widget.AppCompat.ProgressBar">
+        <item name="colorAccent">@color/sky_blue</item>
+    </style>
+</resources>

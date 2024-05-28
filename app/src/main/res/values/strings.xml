@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Transport</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">fWtwLaGw8DZrcfQm0g7x7u9ckoXxP986vI3RYM9L</string>
+    <string name="back4app_client_key">ZL2ouqUMpNXZeGPzfuKPjQsWQiNKUOUEu2zKqBpG</string>
+</resources>

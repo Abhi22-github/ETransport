@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "866027576795",
+    "project_id": "porter-307908",
+    "storage_bucket": "porter-307908.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866027576795:android:8be26717f2e863bb005bfe",
+        "android_client_info": {
+          "package_name": "com.serviceapps.transport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866027576795-eg99p1q3gvraq2ugmkl0fjilqo57rbt1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0eDc4Sc_14JgBUKDH6dMto6OXb0mAvXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866027576795-eg99p1q3gvraq2ugmkl0fjilqo57rbt1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,90 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Transport" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/sky_blue</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/transparent</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Widget.BottomNavigationViewText" parent="@style/Widget.Design.BottomNavigationView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/dm_sans_regular</item>
+        <item name="background">@color/white</item>
+    </style>
+
+
+    <style name="LoadingProgressBarStyle" parent="Widget.AppCompat.ProgressBar">
+        <item name="colorAccent">@color/sky_blue</item>
+    </style>
+
+    <style name="MaterialHintText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/dm_sans_regular</item>
+    </style>
+
+    <style name="MaterialTextInputHeader">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/dm_sans_medium</item>
+        <item name="android:textColor">@color/black_icon</item>
+    </style>
+    <style name="QuestionHeader">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/dm_sans_medium</item>
+        <item name="android:textColor">@color/black_icon</item>
+    </style>
+    <style name="MaterialTextInputHeaderBottomSheet">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/dm_sans_regular</item>
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+
+    <style name="PrefixText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/dm_sans_regular</item>
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+
+    <style name="PrimaryHeading">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/dm_sans_medium</item>
+    </style>
+
+    <style name="TextBoxHeading">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/dm_sans_regular</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ErrorText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/dm_sans_regular</item>
+    </style>
+
+    <style name="MaterialInputTextEditText">
+        <item name="fontFamily">@font/dm_sans_regular</item>
+    </style>
+
+    <style name="vehicleTabsText">
+        <item name="fontFamily">@font/dm_sans_medium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="dm_semibold">
+        <item name="android:fontFamily">@font/dm_sans_medium</item>
+    </style>
+    <style name="dm_regular">
+        <item name="android:fontFamily">@font/dm_sans_regular</item>
+    </style>
+    <style name="ProgressBarStyle" parent="Widget.AppCompat.ProgressBar">
+        <item name="colorAccent">#ffffff</item>
+    </style>
+</resources>
